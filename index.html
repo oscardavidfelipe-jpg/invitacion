@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Invitación - Cumpleaños de Pablo</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+:root{--accent:#b7955a;--muted:#7a6a5a;--bg:#faf7f6;--card:#fff}
+body{margin:0;font-family:Inter,Arial;background:var(--bg);color:#222}
+.header{
+  height:360px;background-image:linear-gradient(180deg,rgba(0,0,0,0.25),rgba(0,0,0,0.12)),
+  url('https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=1400&q=60');
+  background-size:cover;display:flex;align-items:center;justify-content:center;color:white;text-align:center}
+.header h1{font-family:'Playfair Display',serif;font-size:48px;margin:0;text-shadow:0 6px 20px rgba(0,0,0,0.35)}
+.container{max-width:980px;margin:-80px auto 40px;padding:0 20px}
+.card{background:var(--card);border-radius:14px;padding:28px;box-shadow:0 20px 50px rgba(0,0,0,0.08)}
+.lead{color:var(--muted);margin-top:6px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:18px}
+label{display:block;font-weight:600;margin-bottom:6px;color:#333}
+input,select,textarea{width:100%;padding:12px;border-radius:8px;border:1px solid #e9e4df;font-size:15px;font-family:inherit}
+textarea{min-height:90px;resize:vertical}
+.actions{margin-top:14px;display:flex;gap:12px;flex-wrap:wrap}
+.btn{background:var(--accent);color:white;padding:12px 18px;border-radius:10px;border:none;cursor:pointer;font-weight:700;box-shadow:0 6px 18px rgba(181,149,90,0.18)}
+.btn.secondary{background:#e9e4df;color:#333}
+.footer{margin-top:18px;color:#777;font-size:14px}
+.note{font-size:13px;color:#8a8a8a;margin-top:8px}
+@media(max-width:760px){.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+  <div class="header">
+    <div>
+      <h1>Cumpleaños de Pablo</h1>
+      <div class="lead">Te invitamos a celebrar con nosotros</div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="card">
+      <h2>Detalles del evento</h2>
+      <p class="note">Fecha, hora y lugar. (Evento genérico — editá aquí si querés)</p>
+      <ul>
+        <li><strong>Fecha:</strong> 2025-12-31</li>
+        <li><strong>Hora:</strong> 20:00</li>
+        <li><strong>Lugar:</strong> Salón "La Estancia"</li>
+        <li><strong>Regalos:</strong> Opcional - Sobre o lista de deseos</li>
+      </ul>
+
+      <div style="margin-top:18px">
+        <a class="btn" href="confirmar.html">Confirmar asistencia</a>
+        <a class="btn secondary" href="admin-secreto-8734.html">Área Administrador</a>
+      </div>
+
+      <p class="footer">Privacidad: sólo el admin podrá descargar los listados en PDF.</p>
+    </div>
+  </div>
+</body>
+</html>
